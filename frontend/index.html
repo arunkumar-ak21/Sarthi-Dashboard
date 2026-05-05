@@ -1,0 +1,64 @@
+﻿<!-- Sarthi Dashboard (Step 6) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthi — Voice of Krishna</title>
+    <meta name="description" content="Chat with Lord Krishna from the Mahabharata. An NLP-powered conversational AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-left">
+                <div class="avatar" id="avatar">
+                    <span class="avatar-icon">🙏</span>
+                </div>
+                <div class="header-info">
+                    <h1 class="title">Sarthi</h1>
+                    <p class="subtitle" id="status-text">Krishna is ready</p>
+                </div>
+            </div>
+            <button class="new-chat-btn" id="new-chat-btn" title="New Conversation">
+                <span>+ Naya Samvad</span>
+            </button>
+        </header>
+
+        <!-- Chat Area -->
+        <main class="chat-area" id="chat-area">
+            <!-- Messages will be added here by JavaScript -->
+        </main>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typing-indicator">
+            <div class="typing-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <span class="typing-text">Krishna soch rahe hain...</span>
+        </div>
+
+        <!-- Input Area -->
+        <footer class="input-area" id="input-area">
+            <div class="input-wrapper">
+                <textarea 
+                    id="message-input" 
+                    placeholder="Krishna se poocho..."
+                    rows="1"
+                    maxlength="1000"
+                ></textarea>
+                <button class="send-btn" id="send-btn" title="Bhejo">
+                    <span class="send-icon">➤</span>
+                </button>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
